@@ -11,8 +11,8 @@
 #         self.category = category
 #         self.slot = slot
 
-from ThoughtWorks.Doctor import Doctor
-from ThoughtWorks.Slot import Slot
+from ThoughtWorks.DoctorAppointmentProblem.Doctor import Doctor
+from ThoughtWorks.DoctorAppointmentProblem.Slot import Slot
 
 docs = [Doctor("docA", "PED", Slot(1, 2.0, 4.0)),
         Doctor("docB", "PED", Slot(1, 1.0, 4.0)),
