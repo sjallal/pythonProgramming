@@ -1,16 +1,18 @@
-class Slot:
-    def __init__(self, day, start, end):
-        self.day = day
-        self.start = start
-        self.end = end
+# class Slot:
+#     def __init__(self, day, start, end):
+#         self.day = day
+#         self.start = start
+#         self.end = end
+#
+#
+# class Doctor:
+#     def __init__(self, name, category, slot):
+#         self.name = name
+#         self.category = category
+#         self.slot = slot
 
-
-class Doctor:
-    def __init__(self, name, category, slot):
-        self.name = name
-        self.category = category
-        self.slot = slot
-
+from ThoughtWorks.Doctor import Doctor
+from ThoughtWorks.Slot import Slot
 
 docs = [Doctor("docA", "PED", Slot(1, 2.0, 4.0)),
         Doctor("docB", "PED", Slot(1, 1.0, 4.0)),
@@ -33,7 +35,8 @@ while numOfPat > 0:
             if docs[i].slot.day == day:
                 if docs[i].slot.start <= startTime and docs[i].slot.end >= endTime:
                     docs[i].slot.start = endTime
-                    print("Appointment has been booked for patient "+pName+" with Doctor "+docs[i].name+" for "+date+", "+ str(day)+" from "+startTime+" to "+endTime)
+                    print("Appointment has been booked for patient " + pName + " with Doctor " + docs[
+                        i].name + " for " + date + ", " + str(day) + " from " + startTime + " to " + endTime)
                     flag = True
                     break
 
@@ -42,7 +45,6 @@ while numOfPat > 0:
               "date/time.")
 
     numOfPat -= 1
-
 
 """
 3
